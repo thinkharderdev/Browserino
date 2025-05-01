@@ -27,18 +27,15 @@ struct AboutTab: View {
             
             Button(action: {
                 NSWorkspace.shared.open(
-                    URL(string: "https://github.com/AlexStrNik/Browserino/")!
+                    URL(string: "https://github.com/thinkharderdev/Browserino/")!
                 )
             }) {
-                Text("https://github.com/AlexStrNik/Browserino/")
+                Text("https://github.com/thinkharderdev/Browserino/")
             }
             .buttonStyle(.link)
             
             Spacer()
                 .frame(height: 16)
-            
-            Text("Thanks to @byt3m4st3r and others for contributions!")
-                .foregroundStyle(.secondary)
             
             Spacer()
         }

@@ -29,7 +29,7 @@ class BrowserUtil {
         }
 
         // Remove Browserino from the browser list
-        if let browserino = NSWorkspace.shared.urlForApplication(withBundleIdentifier: Bundle.main.bundleIdentifier ?? "xyz.alexstrnik.Browserino") {
+        if let browserino = NSWorkspace.shared.urlForApplication(withBundleIdentifier: Bundle.main.bundleIdentifier ?? "dev.thinkharder.Browserino") {
             if filteredUrlsForApplications.contains(browserino) {
                 filteredUrlsForApplications.removeAll { $0 == browserino }
             }
